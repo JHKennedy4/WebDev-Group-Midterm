@@ -51,6 +51,7 @@ nav ul li {
     background: #BBB;
     text-align: center;
     height: 100%;
+    cursor: pointer;
 }
 nav ul li a {
     color: #000;
@@ -79,12 +80,24 @@ nav ul li a {
 #home {
     background: #92D371
 }
+#home:hover, #home.selected {
+    box-shadow: 0px 2px 0px #FFF, 0px 4px 0px #92D371;
+}
 #content {
     background: #6FD6F2
+}
+#content:hover, #content.selected {
+    box-shadow: 0px 2px 0px #FFF, 0px 4px 0px #6FD6F2;
 }
 #projects {
     background: #F18D66
 }
+#projects:hover, #projects.selected {
+    box-shadow: 0px 2px 0px #FFF, 0px 4px 0px #F18D66;
+}
 #syllabus {
     background: #F0EE45
+}
+#syllabus:hover, #syllabus.selected {
+    box-shadow: 0px 2px 0px #FFF, 0px 4px 0px #F0EE45;
 }
