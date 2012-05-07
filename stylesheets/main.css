@@ -1,0 +1,89 @@
+html {
+    background: #EEEFF3;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+body {/*
+    width: 480px;
+    background: #FFF;*/
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.2em;
+}
+h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+}
+h2{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 5px;
+    padding-left: .5em;
+}
+header h2{
+    color: #983332;
+    padding-bottom: .5em
+}
+p{
+    padding-left: 2em;
+}
+#weekly {
+    padding-left: 2em;
+}
+#weekly li {
+    padding-bottom: .5em;
+}
+nav {
+    width: 100%;
+    background: #8C9395;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    background: #333;
+    height: 40px;
+}
+nav ul li {
+    display: inline-block;
+    width: 25%;
+    background: #BBB;
+    margin-right: -5px;
+    text-align: center;
+    height: 100%;
+}
+nav ul li a {
+    color: #000;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: -10px;
+}
+*.bounded {
+    max-width: 800px;
+    min-width: 480px;
+    margin: auto;
+}
+#professor-info {
+    float: right;
+    margin: 5px;
+}
+#professor-info img{
+    float: right;
+}
+#professor-info ul {
+    text-align: center;
+    clear: right;
+}
+#home {
+    background: #92D371
+}
+#content {
+    background: #6FD6F2
+}
+#projects {
+    background: #F18D66
+}
+#syllabus {
+    background: #F0EE45
+}
