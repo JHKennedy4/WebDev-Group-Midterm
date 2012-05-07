@@ -14,8 +14,8 @@ h1{
     font-size: 1.5em;
     font-weight: bold;
     margin: .25em;
-	padding-top: 1em;
-	padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 h2{
     font-size: 1.25em;
@@ -58,6 +58,7 @@ nav ul li a {
     text-decoration: none;
     margin: auto;
     vertical-align: -10px;
+    font-size: 1.1em;
 }
 *.bounded {
     max-width: 800px;
