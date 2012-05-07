@@ -3,9 +3,9 @@ html {
     font-size: 16px;
     font-family: sans-serif;
 }
-body {/*
+body {/* Uncomment to test small screen mode
     width: 480px;
-    background: #FFF;*/
+    background: #FFF; */
     padding-top: 1em;
     padding-bottom: 1em;
     line-height: 1.2em;
@@ -13,17 +13,18 @@ body {/*
 h1{
     font-size: 1.5em;
     font-weight: bold;
-    margin: 5px;
+    margin: .25em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 h2{
     font-size: 1.25em;
     font-weight: bold;
     margin: 5px;
-    padding-left: .5em;
+    padding: .5em;
 }
 header h2{
     color: #983332;
-    padding-bottom: .5em
 }
 p{
     padding-left: 2em;
@@ -48,7 +49,6 @@ nav ul li {
     display: inline-block;
     width: 25%;
     background: #BBB;
-    margin-right: -5px;
     text-align: center;
     height: 100%;
 }
