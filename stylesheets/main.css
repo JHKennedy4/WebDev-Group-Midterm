@@ -61,11 +61,12 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    width: 25%;
+    width: 24.5%;
     background: #BBB;
     text-align: center;
     height: 100%;
     cursor: pointer;
+    margin-left: .4%;
 }
 nav ul li a {
     color: #000;
@@ -96,23 +97,27 @@ nav ul li a {
     background: #92D371
 }
 #home:hover, #home.selected {
-    box-shadow: 0px 2px 0px #EEEFF3, 0px 4px 0px #92D371;
+	background: #6FD6F2;
+    box-shadow: 0px 0px 10px #333;
 }
 #content {
-    background: #6FD6F2
+    background: #92D371
 }
 #content:hover, #content.selected {
-    box-shadow: 0px 2px 0px #EEEFF3, 0px 4px 0px #6FD6F2;
+	background: #6FD6F2;
+    box-shadow: 0px 0px 10px #333;
 }
 #projects {
-    background: #F18D66
+    background: #92D371
 }
 #projects:hover, #projects.selected {
-    box-shadow: 0px 2px 0px #EEEFF3, 0px 4px 0px #F18D66;
+	background: #6FD6F2;
+	box-shadow: 0px 0px 10px #333;
 }
 #syllabus {
-    background: #F0EE45
+    background: #92D371
 }
 #syllabus:hover, #syllabus.selected {
-    box-shadow: 0px 2px 0px #EEEFF3, 0px 4px 0px #F0EE45;
+	background: #6FD6F2;
+    box-shadow: 0px 0px 10px #333;
 }
