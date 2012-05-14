@@ -23,6 +23,10 @@ h2{
     margin: 5px;
     padding: .5em;
 }
+h2.week{
+    border-radius: .5em;
+    background-color: #5f9A9D;
+}
 header h2{
     color: #983332;
 }
