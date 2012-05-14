@@ -5,6 +5,22 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="../stylesheets/eric-meyer-reset.css" charset="utf-8" type="text/css">
 		<link rel="stylesheet" href="../stylesheets/main.css" charset="utf-8" type="text/css">
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				$("#accordion").accordion({
+				header: 'h2.week',
+				collapsible: true,
+				active: false,
+				alwaysOpen: false,
+				animated: false,
+				autoHeight: false
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<header>
@@ -16,10 +32,11 @@
 			</nav>
 		</header>
 		<div class="bounded">
-			<article>
+			<article id="accordion">
 				<h1>Course Outline</h1>
 				<section>
-					<h2>Week 1</h2>
+					<h2 class="week">Week 1</h2>
+					<div>
 					<h4>Intro &amp; Project Overview</h4>
 					<p>
 					Course Overview: <a href="./01_week/" title="access outline for week 1 classroom materials">Introduction
@@ -32,9 +49,11 @@
 						<li>Usability article: <a href="http://www.useit.com/alertbox/20010204.html">Are Users Stupid?</a> by Jakob Nielsen</li>
 						<li>Interaction Design article: <a href="http://www.useit.com/alertbox/progressive-disclosure.html">Progressive Disclosure</a> by Jakob Nielsen</li>
 					</ul>
+					</div>
 				</section>
 				<section>
-					<h2>Week 2</h2>
+					<h2 class="week">Week 2</h2>
+					<div>
 					<h4>Info Architecture &amp; Visual Organization</h4>
 					<ul>
 						<li>Information Architecture</li>
@@ -68,9 +87,11 @@
 						<li>Groups assigned in class, first class meeting</li>
 						<li><i><b><a href="coursepage.html">Individual Course Web Page</a></b></i>, due Monday midnight</li>
 					</ul>
+					</div>
 				</section>
 				<section>
-					<h2>Week 3</h2>
+					<h2 class="week">Week 3</h2>
+					<div>
 					<h4>Interaction Design</h4>
 					<ul>
 						<li><a href="./03_week/" title="access outline for week 3 classroom presentation">In-class outline</a></li>
@@ -84,9 +105,11 @@
 					<p>
 						<em><strong><a href="./groupMidterm.html">Group Web Page</a></strong></em> due Sunday midnight
 					</p>
+					</div>
 				</section>
 				<section>
-					<h2>Week 4</h2>
+					<h2 class="week">Week 4</h2>
+					<div>
 					<h4>Page Design</h4>
 					<ul>
 						<li>Presentation Design</li>
@@ -110,9 +133,11 @@
 						<li><a href="http://www.w3schools.com/html/html_forms.asp">W3Schools Form Tutorial</a></li>
 						<li><a href="http://www.drdobbs.com/184413116">The Future of Forms</a></li>
 					</ul>
+					</div>
 				</section>
 				<section>
-					<h2>Week 5</h2>
+					<h2 class="week">Week 5</h2>
+					<div>
 					<h4>A Bit of This and a Bit of That: CSS, PHP, &amp; JavaScript</h4>
 					<ul>
 						<li>Cascading Style Sheets</li>
@@ -134,9 +159,11 @@
 					<p>
 						<em><strong><a href="project1.html">Individual Midterm</a></strong></em>, due Wednesday midnight
 					</p>
+					</div>
 				</section>
 				<section>
-					<h2>Week 6</h2>
+					<h2 class="week">Week 6</h2>
+					<div>
 					<h4>Deeper Into Scripting</h4>
 					<ul>
 						<li>Client-side Scripting: Javascript</li>
@@ -160,9 +187,11 @@
 					<p>
 						<strong><em><a href="./groupMidterm.html">Group Midterm</a></em></strong>, due Wednesday midnight
 					</p>
+					</div>
 				</section>
 				<section>
-					<h2>Week 7</h2>
+					<h2 class="week">Week 7</h2>
+					<div>
 					<h4>Dynamic Pages</h4>
 					<ul>
 						<li>Dynamic Pages</li>
@@ -185,9 +214,11 @@
 					<ul>
 						<li><a href="http://css.maxdesign.com.au/floatutorial/tutorial0801.htm" title="liquid layout tutorial">Float Tutorial</a></li>
 					</ul>
+					</div>
 				</section>
 				<section>
-					<h2>Week 8</h2>
+					<h2 class="week">Week 8</h2>
+					<div>
 					<h4>Servers &amp; Forms</h4>
 					<ul>
 						<li>Forms</li>
@@ -205,9 +236,11 @@
 					</ul>
 					<h4>Final Project Milestone</h4>
 					<p>Monday: <a href="redesignProject.html">Group Final Project</a> design document ready for in-class review</p>
+					</div>
 				</section>
 				<section>
-					<h2>Week 9</h2>
+					<h2 class="week">Week 9</h2>
+					<div>
 					<h4>Servers</h4>
 					<ul>
 						<li>PERL &amp; CGI</li>
@@ -219,20 +252,25 @@
 					<h4>Final Project Milestone</h4>
 					<p>Monday: <a href="redesignProject.html">Group Final Project</a> site mock-up ready for in-class review</p>
 					<p>Wednesday: <a href="./whyPractical.html" title="visit practice practical">Practice Practical Exam</a></p>
+					</div>
 				</section>
 				<section>
-					<h2>Week 10</h2>
+					<h2 class="week">Week 10</h2>
+					<div>
 					<h4>Accessability &amp; Demos Begin</h4>
 					<p>Monday: <strong>Practical Exam</strong></p>
 					<h4>Final Project Milestone</h4>
 					<p>Wednesday: <a href="redesignProject.html">Group Final Project</a> functional demos ready for in-class review</p>
+					</div>
 				</section>
 				<section>
-					<h2>exam week</h2>
+					<h2 class="week">Exam Week</h2>
+					<div>
 					<ul>
 						<li><strong><em><a href="project4.html">Individual Final Project</a></em></strong> due Monday midnight</li>
 						<li><strong><em><a href="redesignProject.html">Group Final Projects</a></em></strong> presentations on exam day</li>
 					</ul>
+					</div>
 				</section>
 			</article>
 		<hr />
