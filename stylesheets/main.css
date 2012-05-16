@@ -23,8 +23,9 @@ h2{
 }
 h2.week{
     border-radius: .5em;
-    background-color: #5f9A9D;
+    background-color: #6FD6F2;
     cursor: pointer;
+    border: solid thin #666;
 }
 header h2{
     color: #983332;
