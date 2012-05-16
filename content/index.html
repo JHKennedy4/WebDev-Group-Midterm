@@ -5,10 +5,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="../stylesheets/eric-meyer-reset.css" charset="utf-8" type="text/css">
 		<link rel="stylesheet" href="../stylesheets/main.css" charset="utf-8" type="text/css">
-	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-
 		<script>
 			$(document).ready(function() {
 				$("#accordion").accordion({
@@ -21,19 +19,21 @@
 				});
 			});
 		</script>
+		<script type="text/javascript" src="../scripts/main.js"></script>
 	</head>
 	<body>
 		<header>
 			<h2 class="bounded">409 - 737 : Spring 2011-12</h2>
 			<nav>
 				<ul class="bounded"> <!-- List items below have to be all one line, sorry for the ugliness -->
-					<li id="home"><a href="../" title="Home">Home</a></li><li id="content" class="selected"><a href="../content/index.html" title="Content">Content</a></li><li id="projects"><a href="../projects/index.html" title="Projects">Projects</a></li><li id="syllabus"><a href="../syllabus/index.html" title="Syllabus">Syllabus</a></li>
+					<li id="home"><a href="../index.html" title="Home">Home</a></li><li id="content" class="selected"><a href="../content/index.html" title="Content">Content</a></li><li id="projects"><a href="../projects/index.html" title="Projects">Projects</a></li><li id="syllabus"><a href="../syllabus/index.html" title="Syllabus">Syllabus</a></li>
 				</ul>
 			</nav>
 		</header>
 		<div class="bounded">
 			<article id="accordion">
 				<h1>Course Outline</h1>
+				<div id="filters"><a id="all" class="button current" href="#" onclick="filter('');">All</a><a id="exercise" class="button" href="#" onclick="filter('exercise');">Exercises</a><a id="resource" class="button" href="#" onclick="filter('resource');">Resources</a><a id="deadline" class="button" href="#" onclick="filter('deadline');">Deadlines</a></div>
 				<section>
 					<h2 class="week">Week 1</h2>
 					<div>
@@ -42,7 +42,7 @@
 					Course Overview: <a href="./01_week/" title="access outline for week 1 classroom materials">Introduction
 					&amp; Foundation Materials</a>
 					</p>
-					<h4>Readings</h4>
+					<h4 class="resource">Readings</h4>
 					<ul>
 						<li>Webmaster in a Nutshell, Chpt 2,3,7,8</li>
 						<li><a href="http://www.webstandards.org">WebStandards.org</a></li>
