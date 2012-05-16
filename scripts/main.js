@@ -19,6 +19,7 @@ function filter( str ){
 }
 
 function hideAll(){
+	hideClass('topic');
 	hideClass( 'exercise' );
 	hideClass( 'deadline' );
 	hideClass( 'resource' );
@@ -32,6 +33,7 @@ function hideClass( className ){
 }
 
 function showAll(){
+	showClass('topic');
 	showClass( 'exercise' );
 	showClass( 'deadline' );
 	showClass( 'resource' );
@@ -42,5 +44,15 @@ function showClass( className ){
 	var toShow = document.getElementsByClassName( className );
 	for( var i = 0; i < toShow.length; i++ ){
 		toShow[i].style.display = 'block';
+	}
+	fixLI();
+}
+
+function fixLI(){
+	var li = document.getElementsByTagName('li')
+	for( var i = 0; i < li.length; i++){
+		if( li[i].style.display == 'block' ){
+			li[i].style.display = 'list-item';
+		}
 	}
 }
