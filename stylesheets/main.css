@@ -77,7 +77,7 @@ nav ul li a {
     text-decoration: none;
     margin: auto;
     vertical-align: -10px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 *.bounded {
     max-width: 800px;
@@ -125,7 +125,7 @@ nav ul li a {
     box-shadow: 0px 0px 10px #333;
 }
 .button, .button:visited {
-  background: #ccc;
+  background: #92D371;
   color: #000;
   font-size: 12px;
   text-decoration: none;
@@ -134,11 +134,12 @@ nav ul li a {
   display: inline-block;
 }
 .button:hover {
-  background: #ddd;
+  background: #6FD6F2;
   border-color: #333;
 }
 .button:active, .button.current {
-  background: #555;
+  background: #6FD6F2;
   border-color: #333;
-  color: #fff;
+  color: #000;
+    box-shadow: 0px 0px 5px #333;
 }​
