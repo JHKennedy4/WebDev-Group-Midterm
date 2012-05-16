@@ -24,6 +24,7 @@ h2{
 h2.week{
     border-radius: .5em;
     background-color: #5f9A9D;
+    cursor: pointer;
 }
 header h2{
     color: #983332;
