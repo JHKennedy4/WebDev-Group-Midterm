@@ -39,7 +39,6 @@ function showAll(){
 	showClass( 'resource' );
 }
 
-// Only works for block elements, inline elements will break
 function showClass( className ){
 	var toShow = document.getElementsByClassName( className );
 	for( var i = 0; i < toShow.length; i++ ){
@@ -54,5 +53,45 @@ function fixLI(){
 		if( li[i].style.display == 'block' ){
 			li[i].style.display = 'list-item';
 		}
+	}
+}
+
+function makeToggleable( id ){
+	document.getElementById( id ).addEventListener( 'click', toggleDisplay );
+} 
+function toggleDisplay(  ){
+	var item = this.nextElementSibling;
+	if( item.style.display == 'block' || item.style.display == '' ){
+		item.style.display = 'none';
+	}
+	else if( item.style.display == 'none' ){
+		item.style.display = 'block';
+	}
+}
+
+function closeAll(){
+	var items = document.getElementsByClassName( 'toggleable' );
+	for( var i = 0; i < items.length; i++ ){
+		var item = items[i].nextElementSibling;
+		if( item.style.display == 'block' || item.style.display == '' ){
+			item.style.display = 'none';
+		}
+	}
+}
+
+function openAll(){
+	var items = document.getElementsByClassName( 'toggleable' );
+	for( var i = 0; i < items.length; i++ ){
+		var item = items[i].nextElementSibling;
+		if( item.style.display == 'none'){
+			item.style.display = 'block';
+		}
+	}
+}
+
+document.onreadystatechange = function (){
+	var items = document.getElementsByClassName( 'toggleable' );
+	for( var i = 0; i < items.length; i++ ){
+		makeToggleable( items[i].id );
 	}
 }

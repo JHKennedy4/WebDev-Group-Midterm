@@ -26,6 +26,7 @@ h2.week{
     background-color: #6FD6F2;
     cursor: pointer;
     border: solid thin #666;
+    margin-top: 0.5em;
 }
 header h2{
     color: #983332;
