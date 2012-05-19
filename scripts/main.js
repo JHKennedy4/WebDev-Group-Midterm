@@ -1,5 +1,5 @@
 function filter( str ){
-	var buttons = document.getElementsByClassName('button')
+	var buttons = $('.button');
 	for( var i = 0; i < buttons.length; i++ ){
 		buttons[i].className = 'button';
 	}
@@ -7,7 +7,7 @@ function filter( str ){
 	if( str == '' ){
 		str = 'all';
 	}
-	var button = document.getElementById( str );
+	var button = $(str);
 	button.className = 'button current';
 	if( str != 'all' ){
 		hideAll();
@@ -26,7 +26,7 @@ function hideAll(){
 }
 
 function hideClass( className ){
-	var toHide = document.getElementsByClassName( className );
+	var toHide = $('.'+className);
 	for( var i = 0; i < toHide.length; i++ ){
 		toHide[i].style.display = 'none';
 	}
@@ -40,7 +40,7 @@ function showAll(){
 }
 
 function showClass( className ){
-	var toShow = document.getElementsByClassName( className );
+	var toShow = $('.'+className);
 	for( var i = 0; i < toShow.length; i++ ){
 		toShow[i].style.display = 'block';
 	}
@@ -48,7 +48,7 @@ function showClass( className ){
 }
 
 function fixLI(){
-	var li = document.getElementsByTagName('li')
+	var li = $('li')
 	for( var i = 0; i < li.length; i++){
 		if( li[i].style.display == 'block' ){
 			li[i].style.display = 'list-item';
@@ -67,7 +67,7 @@ function toggleDisplay(  ){
 }
 
 function closeAll(){
-	var items = document.getElementsByClassName( 'toggleable' );
+	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
 		var item = items[i].nextElementSibling;
 		if( item.style.display == 'block' || item.style.display == '' ){
@@ -77,7 +77,7 @@ function closeAll(){
 }
 
 function openAll(){
-	var items = document.getElementsByClassName( 'toggleable' );
+	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
 		var item = items[i].nextElementSibling;
 		if( item.style.display == 'none'){
@@ -87,7 +87,7 @@ function openAll(){
 }
 
 document.onreadystatechange = function (){
-	var items = document.getElementsByClassName( 'toggleable' );
+	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
 		items[i].addEventListener( 'click', toggleDisplay );
 	}
