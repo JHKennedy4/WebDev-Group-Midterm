@@ -57,21 +57,21 @@ function fixLI(){
 }
 
 function toggleDisplay(  ){
-	var item = this.nextElementSibling;
-	if( $(item).css('display') == 'block' || $(item).css('display') == '' ){
-		$(item).css('display', 'none');
+	var item = $(this).next();
+	if( item.css('display') == 'block' || item.css('display') == '' ){
+		item.css('display', 'none');
 	}
-	else if( $(item).css('display') == 'none' ){
-		$(item).css('display', 'block');
+	else if( item.css('display') == 'none' ){
+		item.css('display', 'block');
 	}
 }
 
 function closeAll(){
 	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
-		var item = items[i].nextElementSibling;
-		if( $(item).css('display') == 'block' || $(item).css('display') == '' ){
-			$(item).css('display', 'none');
+		var item = $(items[i]).next();
+		if( item.css('display') == 'block' || item.css('display') == '' ){
+			item.css('display', 'none');
 		}
 	}
 }
@@ -79,9 +79,9 @@ function closeAll(){
 function openAll(){
 	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
-		var item = items[i].nextElementSibling;
-		if( $(item).css('display') == 'none'){
-			$(item).css('display', 'block');
+		var item = $(items[i]).next();
+		if( item.css('display') == 'none'){
+			item.css('display', 'block');
 		}
 	}
 }
