@@ -28,7 +28,7 @@ function hideAll(){
 function hideClass( className ){
 	var toHide = $('.'+className);
 	for( var i = 0; i < toHide.length; i++ ){
-		toHide[i].style.display = 'none';
+		$(toHide[i]).css('display', 'none');
 	}
 }
 
@@ -42,7 +42,7 @@ function showAll(){
 function showClass( className ){
 	var toShow = $('.'+className);
 	for( var i = 0; i < toShow.length; i++ ){
-		toShow[i].style.display = 'block';
+		$(toShow[i]).css('display', 'block');
 	}
 	fixLI();
 }
@@ -50,19 +50,19 @@ function showClass( className ){
 function fixLI(){
 	var li = $('li')
 	for( var i = 0; i < li.length; i++){
-		if( li[i].style.display == 'block' ){
-			li[i].style.display = 'list-item';
+		if( $(li[i]).css('display') == 'block' ){
+			$(li[i]).css('display', 'list-item');
 		}
 	}
 }
 
 function toggleDisplay(  ){
 	var item = this.nextElementSibling;
-	if( item.style.display == 'block' || item.style.display == '' ){
-		item.style.display = 'none';
+	if( $(item).css('display') == 'block' || $(item).css('display') == '' ){
+		$(item).css('display', 'none');
 	}
-	else if( item.style.display == 'none' ){
-		item.style.display = 'block';
+	else if( $(item).css('display') == 'none' ){
+		$(item).css('display', 'block');
 	}
 }
 
@@ -70,8 +70,8 @@ function closeAll(){
 	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
 		var item = items[i].nextElementSibling;
-		if( item.style.display == 'block' || item.style.display == '' ){
-			item.style.display = 'none';
+		if( $(item).css('display') == 'block' || $(item).css('display') == '' ){
+			$(item).css('display', 'none');
 		}
 	}
 }
@@ -80,15 +80,12 @@ function openAll(){
 	var items = $( '.toggleable' );
 	for( var i = 0; i < items.length; i++ ){
 		var item = items[i].nextElementSibling;
-		if( item.style.display == 'none'){
-			item.style.display = 'block';
+		if( $(item).css('display') == 'none'){
+			$(item).css('display', 'block');
 		}
 	}
 }
 
-document.onreadystatechange = function (){
-	var items = $( '.toggleable' );
-	for( var i = 0; i < items.length; i++ ){
-		items[i].addEventListener( 'click', toggleDisplay );
-	}
-}
+$(document).ready(function(){
+	var items = $( '.toggleable' ).on( 'click', toggleDisplay );
+});
