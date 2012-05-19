@@ -6,20 +6,23 @@
 		<link rel="stylesheet" href="../stylesheets/eric-meyer-reset.css" charset="utf-8" type="text/css">
 		<link rel="stylesheet" href="../stylesheets/main.css" charset="utf-8" type="text/css">
 		<script type="text/javascript" src="../scripts/main.js"></script>
+		<script type="text/javascript" src="../scripts/getElementsByClassName-1.0.1.js"></script><!-- IE7-8 support-->
 	</head>
 	<body>
-		<header>
+		<div id="header">
 			<h2 class="bounded">409 - 737 : Spring 2011-12</h2>
-			<nav>
+			<div id="nav">
 				<ul class="bounded"> <!-- List items below have to be all one line, sorry for the ugliness -->
 					<li id="home" onclick="window.location = this.children[0].href"><a href="../index.html" title="Home">Home</a></li><li id="content" class="selected" onclick="window.location = this.children[0].href"><a href="../content/index.html" title="Content">Content</a></li><li id="projects" onclick="window.location = this.children[0].href"><a href="../projects/index.html" title="Projects">Projects</a></li><li id="syllabus" onclick="window.location = this.children[0].href"><a href="../syllabus/index.html" title="Syllabus">Syllabus</a></li>
 				</ul>
-			</nav>
-		</header>
+			</div>
+		</div>
 		<div class="bounded">
-			<article id="accordion">
+			<article>
 				<h1>Course Outline</h1>
-				<div id="filters"><a id="all" class="button current" href="#" onclick="filter('');">All</a><a id="exercise" class="button" href="#" onclick="filter('exercise');">Exercises</a><a id="resource" class="button" href="#" onclick="filter('resource');">Resources</a><a id="deadline" class="button" href="#" onclick="filter('deadline');">Deadlines</a><a class="button" href="#" onclick="openAll();" style="float:right">Open All</a><a class="button" href="#" onclick="closeAll();" style="float:right">Close All</a></div>
+				<div id="filters"><a id="open" class="button" href="#" onclick="openAll();">Open All</a><a id="close" class="button" href="#" onclick="closeAll();">Close All</a>
+				<a id="deadline" class="button" href="#" onclick="filter('deadline');" style="float:right">Deadlines</a><a id="resource" class="button" href="#" onclick="filter('resource');" style="float:right">Resources</a><a id="exercise" class="button" href="#" onclick="filter('exercise');" style="float:right">Exercises</a><a id="all" class="button current" href="#" onclick="filter('');" style="float:right">All</a>
+				</div>
 				<section>
 					<h2 id="1" class="week toggleable">Week 1</h2>
 					<div>
@@ -38,7 +41,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='2'>Week 2</h2>
+					<h2 class="week toggleable" id="2">Week 2</h2>
 					<div>
 						<h4>Info Architecture &amp; Visual Organization</h4>
 						<ul>
@@ -76,7 +79,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='3'>Week 3</h2>
+					<h2 class="week toggleable" id="3">Week 3</h2>
 					<div>
 						<h4>Interaction Design</h4>
 						<ul>
@@ -94,7 +97,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='4'>Week 4</h2>
+					<h2 class="week toggleable" id="4">Week 4</h2>
 					<div>
 						<h4>Page Design</h4>
 						<ul>
@@ -122,7 +125,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='5'>Week 5</h2>
+					<h2 class="week toggleable" id="5">Week 5</h2>
 					<div>
 						<h4>A Bit of This and a Bit of That: CSS, PHP, &amp; JavaScript</h4>
 						<ul>
@@ -148,7 +151,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='6'>Week 6</h2>
+					<h2 class="week toggleable" id="6">Week 6</h2>
 					<div>
 						<h4>Deeper Into Scripting</h4>
 						<ul>
@@ -176,7 +179,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='7'>Week 7</h2>
+					<h2 class="week toggleable" id="7">Week 7</h2>
 					<div>
 						<h4>Dynamic Pages</h4>
 						<ul>
@@ -203,7 +206,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='8'>Week 8</h2>
+					<h2 class="week toggleable" id="8">Week 8</h2>
 					<div>
 						<h4>Servers &amp; Forms</h4>
 						<ul>
@@ -225,7 +228,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='9'>Week 9</h2>
+					<h2 class="week toggleable" id="9">Week 9</h2>
 					<div>
 						<h4>Servers</h4>
 						<ul>
@@ -241,7 +244,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='10'">Week 10</h2>
+					<h2 class="week toggleable" id="10">Week 10</h2>
 					<div>
 						<h4>Accessibility &amp; Demos Begin</h4>
 						<p class="deadline">Monday: <strong>Practical Exam</strong></p>
@@ -250,7 +253,7 @@
 					</div>
 				</section>
 				<section>
-					<h2 class="week toggleable" id='exam'>Exam Week</h2>
+					<h2 class="week toggleable" id="exam">Exam Week</h2>
 					<div>
 						<ul>
 							<li class="deadline"><strong><em><a href="../projects/index.html">Individual Final Project</a></em></strong> due Monday midnight</li>

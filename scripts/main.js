@@ -56,9 +56,6 @@ function fixLI(){
 	}
 }
 
-function makeToggleable( id ){
-	document.getElementById( id ).addEventListener( 'click', toggleDisplay );
-} 
 function toggleDisplay(  ){
 	var item = this.nextElementSibling;
 	if( item.style.display == 'block' || item.style.display == '' ){
@@ -92,6 +89,6 @@ function openAll(){
 document.onreadystatechange = function (){
 	var items = document.getElementsByClassName( 'toggleable' );
 	for( var i = 0; i < items.length; i++ ){
-		makeToggleable( items[i].id );
+		items[i].addEventListener( 'click', toggleDisplay );
 	}
 }
